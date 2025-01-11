@@ -1,0 +1,65 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        FSI Development Platform - Login
+    </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+        <div class="flex justify-center mb-6">
+            <img alt="FSI logo" class="w-24 h-24" src="./image/logo-FSI.png" />
+        </div>
+        <h2 class="text-2xl text-[var(--theme-gree)] font-bold text-center mb-6">
+            FSI Development Platform
+        </h2>
+        <form action="./home.html" method="POST">
+            <div class="mb-4">
+                <label class="block text-gray-700" for="email">
+                    Email
+                </label>
+                <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    id="email" name="email" required="" type="email" />
+            </div>
+            <div class="mb-6">
+                <label class="block text-gray-700" for="password">
+                    Password
+                </label>
+                <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    id="password" name="password" required="" type="password" />
+            </div>
+            <div class="flex items-center justify-between mb-6">
+                <div>
+                    <input class="mr-2" id="remember" name="remember" type="checkbox" />
+                    <label class="text-gray-700" for="remember">
+                        Remember me
+                    </label>
+                </div>
+                <a class="text-[var(--theme-green-2)] hover:underline" href="#">
+                    Forgot password?
+                </a>
+            </div>
+            <button
+                class="w-full bg-[var(--theme-green-1)] text-black py-2 rounded-lg hover:bg-[var(--theme-green-1)] focus:outline-none focus:ring-2 focus:ring-var(--theme-green-1)]"
+                type="submit">
+                Login
+            </button>
+        </form>
+        <p class="text-center text-gray-700 mt-6">
+            Don't have an account?
+            <a class="text-[var(--theme-green-2)] hover:underline" href="#">
+                Sign up
+            </a>
+        </p>
+    </div>
+</body>
+
+</html>

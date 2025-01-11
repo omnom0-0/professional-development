@@ -1,0 +1,124 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        FSI Development Platform - Home
+    </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+    <link href="./styles.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+</head>
+
+<body class="bg-gray-100 min-h-screen">
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <div class="flex items-center">
+                <img alt="FSI Development Platform logo, a stylized gear with the letters FSI in the center"
+                    class="w-12 h-12" src="./image/logo-FSI.png" />
+                <h1 class="text-2xl font-bold ml-3">
+                    FSI Development Platform
+                </h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li>
+                        <a class="text-gray-700 hover:[var(--theme-green-1)]" href="./home.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a class="text-gray-700 hover:[var(--theme-green-1)]" href="./course-list.html">
+                            Courses
+                        </a>
+                    </li>
+                    <li>
+                        <a class="text-gray-700 hover:[var(--theme-green-1)]" href="#">
+                            Profile
+                        </a>
+                    </li>
+                    <li>
+                        <a class="text-gray-700 hover:text-[var(--theme-green-1)]" href="./login.html">
+                            Login
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container mx-auto px-6 py-8">
+        <div class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 text-center">
+                What would you like to learn today?
+            </h2>
+            <div class="flex justify-center">
+                <input
+                    class="w-full max-w-2xl px-4 py-3 border rounded-l-lg focus:outline-none focus:ring-2 focus:ring-[var(--theme-green-1)]"
+                    placeholder="Search for courses..." type="text" />
+                <button
+                    class="bg-[var(--theme-green-1)] px-4 py-3 rounded-r-lg"
+                    type="button" title="Search">
+                    <i class="fas fa-search">
+                    </i>
+                </button>
+            </div>
+        </div>
+        <div>
+            <h2 class="text-2xl font-bold mb-4">
+                My Courses
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <a href="./course/muslim-doctor-competency.html">
+                        <img alt="Course thumbnail, a placeholder image with a generic course-related graphic"
+                            class="w-full h-40 object-cover mb-4" src="./image/mdc-header.png" />
+                        <h3 class="text-xl font-bold mb-2">
+                            Muslim Doctor Competency
+                        </h3>
+                        <p class="text-gray-700 mb-4">
+                            Mengembangkan kompetensi seorang dokter Muslim dengan mengintegrasikan nilai-nilai Islam dalam praktik medis, mencakup aspek aqidah, akhlak, fiqih, sirah, dan kedokteran Islam.
+                        </p>
+                    </a>
+                    <a class="text-[var(--theme-green-2)] hover:underline" href="./course/muslim-doctor-competency.html">
+                        Go to course
+                    </a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <a href="./course/design-with-figma.html">
+                        <img alt="Course thumbnail, a placeholder image with a generic course-related graphic"
+                            class="w-full h-40 object-cover mb-4" src="./image/design-header.png" />
+                        <h3 class="text-xl font-bold mb-2">
+                            Social Media Design with Figma
+                        </h3>
+                        <p class="text-gray-700 mb-4">
+                            Membuat desain media sosial yang menarik dan efektif menggunakan Figma sesuai dengan prinsip desain grafis dan visual guideline organisasi.
+                        </p>
+                    </a>
+                    <a class="text-[var(--theme-green-2)] hover:underline" href="./course/design-with-figma.html">
+                        Go to course
+                    </a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <a href="./course/administration.html">
+                        <img alt="Course thumbnail, a placeholder image with a generic course-related graphic"
+                        class="w-full h-40 object-cover mb-4" src="./image/adm-header.png" />
+                        <h3 class="text-xl font-bold mb-2">
+                        Administrasi
+                        </h3>
+                    <p class="text-gray-700 mb-4">
+                        Memahami berbagai aspek dalam administrasi, termasuk definisi operasional, alur berkas, sistem e-IKM, ladutas, pengelolaan surat, dan peran narahubung
+                    </p>
+                    </a>
+                    <a class="text-[var(--theme-green-2)] hover:underline" href="./course/administration.html">
+                        Go to course
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

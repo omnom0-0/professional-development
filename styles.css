@@ -1,0 +1,59 @@
+/* Tailwind CSS (via CDN) */
+@import url('https://cdn.tailwindcss.com');
+
+/* Add any custom styles if necessary below */
+:root {
+    --theme-green-1: #E5E6B0;
+    --theme-green-2: #009140;
+    --theme-green-3: #9EB770;
+    --theme-blue-1: #093447;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: var(--theme-green-2);
+    text-decoration: none;
+}
+
+
+header {
+    background-color: #E5E6B0;
+    color: black;
+    padding: 1rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li a {
+    color: var(--theme-green-2);
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #E5E6B0;
+    color: black;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer .social-links a {
+    text-decoration: none;
+    color: white;
+    margin: 0 0.5rem;
+}
